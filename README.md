@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏛️ Ajay Press: Premium Studio Web Application
 
-## Getting Started
+A high-performance, minimalist "Light Mode" web application built for **Ajay Press**, a leading printing and gadget repair studio in Arwal, Bihar. This project focuses on high-end visual hierarchy, rapid mobile repair service showcasing, and high-conversion contact points.
 
-First, run the development server:
+## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Minimalist "Light" Design:** A sophisticated aesthetic utilizing a pure white and Zinc-50 grayscale palette.
+- **Architectural Hierarchy:** Strictly alternating sections (White -> Gray) with solid horizontal banding to ensure every service block is clearly distinguishable.
+- **Service Specialization:**
+  - **Printing Hub:** High-definition wedding cards, banners, and digital printing.
+  - **Repair Lab:** Motherboard-level mobile and laptop diagnostic services.
+  - **Digital Lounge:** Instant online form filling and internet services.
+- **High-Conversion CTA:** Integrated WhatsApp "Direct Book" and "Direct Call" systems.
+- **Symmetrical UI:** Precision-balanced grids for service lists, ensuring a professional flow even with odd-numbered items.
+- **UX Stability:** Rock-solid mobile navigation with body scroll locking and structural decoupling for glitch-free browsing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js (App Router)](https://nextjs.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Font:** [Inter / Google Fonts](https://fonts.google.com/specimen/Inter)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design System
 
-## Learn More
+The project uses a custom "Studio" design system defined in `globals.css`:
+- **Soft Shadows:** Multi-layered shadows (`soft-shadow`) for premium depth.
+- **Aesthetic Gradients:** Rotating mesh gradients (`mesh-gradient`) for subtle background texture.
+- **Contrast Bands:** Explicit `border-y border-zinc-100` separators for section identification.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+- Node.js (v18+)
+- npm or pnpm
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/rkravikr/ajay-press-v1.git
+    cd ajay-press-v1
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install Dependencies:**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Run Development Server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to see the result.
+
+## 🌍 Deployment
+
+The project is optimized for deployment on **Vercel**:
+1. Connect your GitHub repository to Vercel.
+2. Ensure the framework is set to **Next.js**.
+3. Deploy.
+
+## 📂 Project Structure
+
+- `src/app/`: Next.js App Router pages and layouts.
+- `src/components/`: Modular UI components (Navbar, Footer, Services, etc.).
+- `public/`: Static assets and images.
+- `src/app/globals.css`: Custom Tailwind v4 theme and design tokens.
+
+---
+
+> [!NOTE]
+> This website is built for high-speed performance and professional clarity. Ensure any new images maintain the "Minimalist Light" aesthetic for consistent branding.
+
+**Developed by Antigravity AI for Ravi Kumar.**
