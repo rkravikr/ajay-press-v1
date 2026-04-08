@@ -26,9 +26,21 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Body scroll lock effect
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
+
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-zinc-200"
           : "bg-transparent py-6"
@@ -80,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-y-0 right-0 w-full bg-white z-[60] transform transition-transform duration-500 ease-in-out md:hidden ${
+        className={`fixed inset-y-0 right-0 w-full bg-white z-[110] transform transition-transform duration-500 ease-in-out md:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
